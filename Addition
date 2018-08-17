@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Calculator in JavaScript</title>
+  </head>
+  <body>
+    <form name="calculator">
+      Number 1 : <input type="text" name="Num1">
+      <br>
+      Number 2 : <input type="text" name="Num2">
+      <br>
+      Calculator Answer : <input type="text" name="ans">
+      <br>
+      <input type="button" value="Count" onclick="CalcFun()">
+    </form>
+    <script type="text/javascript">
+            function CalcFun()
+            {
+            	var n1,n2,res;
+            	n1= Number(document.calculator.Num1.value);
+            	n2= Number(document.calculator.Num2.value);
+            	res= n1+n2;
+            	document.calculator.ans.value = res;
+            }
+     </script>
+  </body>
+</html>
